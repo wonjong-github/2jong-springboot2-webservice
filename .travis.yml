@@ -15,9 +15,9 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r 2jont-springboot-webservice
+  - zip -r 2jong-springboot2-webservice
   - mkdir -p deploy
-  - mv 2jong-springboot-webservice.zip deploy/2jong-springboot-webservice.zip
+  - mv 2jong-springboot2-webservice.zip deploy/2jong-springboot2-webservice.zip
 
 deploy:
   - provider: s3
